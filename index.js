@@ -8,13 +8,17 @@ let redeMann = `Der Mann erzählt das vor dem Waldweg vor dir Banditen warten un
 let wald = `Vor dir ist ein dunkler Wald mit eckigen Bäumen und der Himmel wird mit jedem Schritt düsterer. Willst du Weitergehen, oder Zurückgehen? Gib ein wald2(weiter) oder start(zurück).`;
 let wald2 = `Vor und hinter dir tauchen dunkle Gestalten auf. Willst du flüchten oder kämpfen? Gib ein waldFlucht oder waldKampf.`;
 let waldKampf = `Vor dir siehst du ein wunderschönes weißes Einhorn und eine Schar von Piguinen. Sie wollen dein Hab und Gut. Willst du es ihnen geben, kämpfen oder flüchten. Gib ein geben, waldKampf2 oder waldFlucht`;
+
 //let waldKampf2 
+
 let geben = `Du gibst ihnen dein Hab und Gut. Willst du wieder in Richtung Weg gehen wo du herkamst oder in die andere Richtung du siehst aus der Ferne ein Hexenhaus? Gib ein weg oder hexenhaus`
 let waldFlucht = `Du wirst von vielen Schatten verfolgt aber entkommst ihnen. Nun hast du dich im Wald verlaufen. Vor dir ist ein Lebkuchenhaus. Gib ein hexenhaus(kein anderer Weg)`;
 let hexenhaus = `Das Lebkuchenhaus ist viel größer als es vorher aussah und zudem voll mit Essen. Du hörst Schreie aus dem Keller. Willst du das Essen nehmen und abhauen oder in den Keller gehen und den Schreien folgen? Gib ein weghier oder keller`;
 let keller = `Der Keller ist dunkel und du siehst 2 Kinder in einem rostigen Käfig um Hilfe rufen. Gib ein retteKinder`;
 let retteKinder = `Du rettest die Kinder und der Tag ist gerettet. Nun taucht die Hexe auf. Gib ein kampfHexe`;
+
 //let kampfhexe
+
 let ende1 = `Du rettest die Kinder und der Tag ist gerettet. Herzlichen Glückwunsch! 
 ----The End----`;
 let weghier = `Du hast viel Essen in den Taschen und läufst so schnell wie deine Beine dich tragen. Du hörst Geräusche. Vertsecken oder weiterlaufen? Gib ein verstecken oder weiterlaufen`;
@@ -25,7 +29,9 @@ let schneller = weg;
 
 let brücke = `Du kommst zu einem Fluss dort steht eine kleine hölzerne Brücke und davor ist ein Junge. Willst du Reden, Weitergehen, oder Zurückgehen? Wenn du reden willst musst du das reden mit Leerzeichen hinter dem Befehl eingeben Gib ein reden, feste(weiter) oder start(zurück)`;
 let redeJunge = `Der Junge fragt dich ob du Stress suchst und haut dir ins Gesicht. Willst du Kämpfen, Reden, Weitergehen, oder Zurückgehen? Wenn du reden willst musst du das reden mit Leerzeichen hinter dem Befehl eingeben Gib ein reden2, kampfJunge(kämpfen), feste(weiter) oder start(zurück)`;
+
 // let kampfJunge
+
 let redeJunge2 = `Der Junge ruft seine Freunde. Willst du Reden oder Flüchten? Wenn du reden willst musst du das reden mit Leerzeichen hinter dem Befehl eingeben Gib ein reden3, feste(weiter), start(zurück)`;
 let redeJunge3 = `Der Junge verhaut dich mit seinen Freunden. Game Over!`;
 

@@ -30,20 +30,36 @@ let versus = process.argv[3];
 let defenderName = process.argv[4];
 
 let paul = new Character("Paul", 300, [30,45,60,15,25]);
-let waldtiere= new Character("Waldtiere", 90, [45,15,35,25,30]);
+let waldtiere= new Character("Waldtiere", 290, [45,15,35,25,30]);
 let junge = new Character("Junge", 200, [5,10,8,17,25]);
 let hexe = new Character("Hexe", 350, [10,15,35,25,45]);
 
 
 let characters = { paul,versus,hexe,junge,waldtiere };
 
-if (characters[attackerName] && characters[defenderName]) {
-    characters[attackerName].attack(characters[defenderName]);
-    characters[defenderName].live();
+    for(i=0; i < 100; i++){
+        if (characters[attackerName].health >= 0 && characters[defenderName].health >= 0) {
+            characters[attackerName].attack(characters[defenderName]);
+            characters[defenderName].live();
+        }
+        if (characters[attackerName].health >= 0 && characters[defenderName].health >= 0) {
+            characters[defenderName].attack(characters[attackerName]);
+            characters[attackerName].live();
+        
 
-} else if(characters[attackerName] || characters[defenderName]){
-    console.log('Der Gegner ist noch nicht Kampfbereit');
-}else{
-    console.log('Der Kämpfer ist nicht verfügbar');
+        } 
+    }
+    
+    
+    if(characters[attackerName] || characters[defenderName]){
+                console.log('Der Gegner ist noch nicht Kampfbereit');
+            }else{
+                console.log('Der Kämpfer ist nicht verfügbar');
+            }
+
+
+if (paul.health <= 0){
+    console.log('Du bist tot. GameOver');
 }
+
 
