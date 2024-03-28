@@ -13,5 +13,5 @@ Wenn du in einen Kampf kommst gebe ein z.B `node index.js paul vs (Gegner)` mit 
 Credits
 
 
-Das Spiel Spiel ist in Zusammenarbeit mit Adem Tozlu und Kai Christensen entstanden.
+Das Spiel ist in Zusammenarbeit mit Adem Tozlu und Kai Christensen entstanden.
 
