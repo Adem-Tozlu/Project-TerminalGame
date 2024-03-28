@@ -45,7 +45,7 @@ let characters = { paul,versus,hexe,junge,waldtiere };
 
 if(characters[attackerName] && characters[defenderName]){
     for(i=0; i < 100; i++){
-        if (characters[attackerName].health >= 0 && characters[defenderName].health >= 0) {
+        if (characters[attackerName].health >0 && characters[defenderName].health > 0) {
             characters[attackerName].attack(characters[defenderName]);
             characters[defenderName].live();
 
@@ -53,7 +53,7 @@ if(characters[attackerName] && characters[defenderName]){
                 if(characters[defenderName].health <30 && characters[defenderName].health > 0){
                     console.log(`${characters[defenderName].name} kann kaum auf den beinen stehen.`)}
         }
-        if (characters[attackerName].health >= 0 && characters[defenderName].health >= 0) {
+        if (characters[attackerName].health > 0 && characters[defenderName].health > 0) {
             characters[defenderName].attack(characters[attackerName]);
             characters[attackerName].live();
 
