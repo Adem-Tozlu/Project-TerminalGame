@@ -44,7 +44,7 @@ let characters = { paul,versus,hexe,junge,waldtiere };
         
 
 if(characters[attackerName] && characters[defenderName]){
-    for(i=0; i < characters[attackerName].health; i++){
+    for(i=0; i < 100; i++){
         if (characters[attackerName].health >= 0 && characters[defenderName].health >= 0) {
             characters[attackerName].attack(characters[defenderName]);
             characters[defenderName].live();
@@ -60,9 +60,12 @@ if(characters[attackerName] && characters[defenderName]){
        
         }}
         
-        if(characters[attackerName] || characters[defenderName]){
-        console.log('Der Gegner ist noch nicht Kampfbereit')}///
         
+        if(characters[attackerName] && !characters[defenderName]){
+            console.log('Der Gegner ist noch nicht Kampfbereit')}
+            
+            if(!characters[attackerName] && !characters[defenderName]){
+            console.log('Bitte geben Sie einen gültigen Charakter ein')}
         
         
 
