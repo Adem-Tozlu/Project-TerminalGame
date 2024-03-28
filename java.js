@@ -75,7 +75,7 @@ if(characters[attackerName] && characters[defenderName]){
         if(characters[attackerName] && !characters[defenderName]){
         console.log('Der Gegner ist noch nicht Kampfbereit')}
         
-        if(!characters[attackerName] && !characters[defenderName]){
+        if(!userInputArr && !characters[defenderName]){
         console.log('Bitte geben Sie einen gültigen Charakter ein')
         
     }
