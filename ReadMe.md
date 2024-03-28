@@ -12,4 +12,4 @@ Wenn du in einen Kampf kommst gebe ein z.B `node index.js paul vs (Gegner)` mit 
 
 Credits
 
-Dieses Projekt ist in ZusammenArbeit mit Adem Tozlu und Kai Christensen enstanden.
+Dieses Projekt ist in Zusammenarbeit mit Adem Tozlu und Kai Christensen enstanden.
