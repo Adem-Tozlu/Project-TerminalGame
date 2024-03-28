@@ -22,7 +22,7 @@ Character.prototype.attack = function(params){
 }
 
 Character.prototype.live = function() {
-    this.health <= 0 ? console.log(`${this.name} ist am Boden und kann nicht mehr aufstehen `) : console.log(`${this.name} Gesundheit beträgt jetzt ${this.health}`);
+    this.health <= 0 ? console.log(`\n${this.name} ist am Boden und kann nicht mehr aufstehen\n `) : console.log(`${this.name} Gesundheit beträgt jetzt ${this.health}`);
 }
 
 let attackerName = process.argv[2];
@@ -89,8 +89,8 @@ if(characters[attackerName] && characters[defenderName]){
 
         }
         if(hexe.health <= 0){
-            console.log(`Du rettest die Kinder und der Tag ist gerettet. Herzlichen Glückwunsch! 
-            ----The End----`);
+            console.log(`Du rettest die Kinder und der Tag ist gerettet. Herzlichen Glückwunsch!\n
+            ----THE END----\n`);
         }
         if(waldtiere.health <= 0){
             console.log(`Du hast überlebt. Gehe in Richtung Lebkuchenhaus oder zum Weg. Gib ein hexenhaus oder weg.`);
