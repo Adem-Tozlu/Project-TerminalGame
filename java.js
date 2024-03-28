@@ -37,41 +37,50 @@ let hexe = new Character("Hexe", 350, [10,15,35,25,45]);
 
 let characters = { paul,versus,hexe,junge,waldtiere };
 
-    
-// module.exports = characters;
-    
 
+
+
+            
+        
 
 if(characters[attackerName] && characters[defenderName]){
-    for(i=0; i < characters[attackerName].health; i++){
+    for(i=0; i < 100; i++){
         if (characters[attackerName].health >= 0 && characters[defenderName].health >= 0) {
             characters[attackerName].attack(characters[defenderName]);
             characters[defenderName].live();
+
+          
+                if(characters[defenderName].health <30 && characters[defenderName].health > 0){
+                    console.log(`${characters[defenderName].name} kann kaum auf den beinen stehen.`)}
         }
         if (characters[attackerName].health >= 0 && characters[defenderName].health >= 0) {
             characters[defenderName].attack(characters[attackerName]);
             characters[attackerName].live();
+
+            
+            if(characters[attackerName].health <30 && characters[attackerName].health > 0){
+                console.log(`${characters[attackerName].name} kann kaum auf den beinen stehen.`)}
+    
+               
         
 
         } 
-        // if (characters[attackerName].health <= 0 ||characters[defenderName].health <= 0) {
-        //     if(characters[attackerName].health > 0){
-
-        //         console.log(`Der Kampf ist vorbei und der Sieger ist ${attackerName}`)
-        //         break;
-        //     }
-        //      if(characters[defenderName].health > 0)
-            
-        //     {
-        //         console.log(`Der Kampf ist vorbei und der Sieger ist ${defenderName}`);
-        //         break;
-        //     }}
+       
+       
+        }}
+        
+        if(characters[attackerName] && !characters[defenderName]){
+        console.log('Der Gegner ist noch nicht Kampfbereit')}
+        
+        if(!characters[attackerName] && !characters[defenderName]){
+        console.log('Bitte geben Sie einen gültigen Charakter ein')
+        
+    }
+       
       
 
-
-        }}
-       
         
+
         if(paul.health <= 0){
             console.log(`Du bist tot. GameOver!`);
         }
@@ -85,12 +94,5 @@ if(characters[attackerName] && characters[defenderName]){
         if(junge.health <= 0){
             console.log(`Der Junge war schwächer. Vielleicht war es so ,weil er viel kleiner als du ist. Und vielleicht war er einfach kein Sieger. Du kannst nun nur in zwei Richtungen. Gib ein feste(vor) oder start(zurück)`);
         }
-         
-    
     
 
-    //     if(characters[attackerName] || characters[defenderName]){
-    //          console.log('Der Gegner ist noch nicht Kampfbereit')}
-              
-    // }
-    
