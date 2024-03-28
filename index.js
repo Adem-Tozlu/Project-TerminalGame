@@ -1,5 +1,5 @@
 userInputArr = process.argv.slice(2);
-
+const characters = require('./java.js');
 
 let start = `Dein Name ist Paul. Du stehst auf einer weißen Wiese mit vielen lila Blumen. Der Himmel ist blau und klar. Links ist ein Weg und Rechts ist eine Brücke. Gib ein weg oder brücke.`;
 
