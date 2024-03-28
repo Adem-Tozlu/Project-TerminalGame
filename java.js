@@ -94,5 +94,7 @@ if(characters[attackerName] && characters[defenderName]){
         if(junge.health <= 0){
             console.log(`Der Junge war schwächer. Vielleicht war es so ,weil er viel kleiner als du ist. Und vielleicht war er einfach kein Sieger. Du kannst nun nur in zwei Richtungen. Gib ein feste(vor) oder start(zurück)`);
         }
+
+        //
     
 
