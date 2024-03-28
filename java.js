@@ -82,7 +82,7 @@ if(characters[attackerName] && characters[defenderName]){
         
 
         if(paul.health <= 0){
-            console.log(`Du bist tot. GameOver!`);
+            console.log(`Du bist tot. \n\nG\nA\nM\nE \n\nO\nV\nE\nR\n\n!\n`);
         }
         if(hexe.health <= 0){
             console.log(`Du rettest die Kinder und der Tag ist gerettet. Herzlichen Glückwunsch! 
