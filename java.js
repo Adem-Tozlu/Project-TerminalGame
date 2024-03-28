@@ -61,7 +61,7 @@ if(characters[attackerName] && characters[defenderName]){
         }}
         
         if(characters[attackerName] || characters[defenderName]){
-        console.log('Der Gegner ist noch nicht Kampfbereit')}
+        console.log('Der Gegner ist noch nicht Kampfbereit')}///
         
         
         
