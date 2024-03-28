@@ -1,7 +1,7 @@
 userInputArr = process.argv.slice(2);
 const characters = require(`./java.js`)
 
-let start = `Dein Name ist Paul. Du stehst auf einer weißen Wiese mit vielen lila Blumen. Der Himmel ist blau und klar. Links ist ein Weg und Rechts ist eine Brücke. Gib ein weg oder brücke.`;
+//let start = `Dein Name ist Paul. Du stehst auf einer weißen Wiese mit vielen lila Blumen. Der Himmel ist blau und klar. Links ist ein Weg und Rechts ist eine Brücke. Gib ein weg oder brücke.`;
 
 //let zewi = k;
 let weg = `Du kommst zu einem Weg wo ein Mann steht. Vor dir ist ein Wald. Willst du Reden, Weitergehen, oder Zurückgehen? Wenn du reden willst musst du das reden mit Leerzeichen hinter dem Befehl eingeben Gib ein reden, wald(weiter) oder start(zurück).`;
