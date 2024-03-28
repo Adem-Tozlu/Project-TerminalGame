@@ -65,10 +65,13 @@ if(characters[attackerName] && characters[defenderName]){
         
 
         } 
+
+        
        
        
         }}
         
+
         if(characters[attackerName] && !characters[defenderName]){
         console.log('Der Gegner ist noch nicht Kampfbereit')}
         
@@ -83,6 +86,7 @@ if(characters[attackerName] && characters[defenderName]){
 
         if(paul.health <= 0){
             console.log(`Du bist tot. \n\nG\nA\nM\nE \n\nO\nV\nE\nR\n\n!\n`);
+
         }
         if(hexe.health <= 0){
             console.log(`Du rettest die Kinder und der Tag ist gerettet. Herzlichen Glückwunsch! 
@@ -94,6 +98,7 @@ if(characters[attackerName] && characters[defenderName]){
         if(junge.health <= 0){
             console.log(`Der Junge war schwächer. Vielleicht war es so ,weil er viel kleiner als du ist. Und vielleicht war er einfach kein Sieger. Du kannst nun nur in zwei Richtungen. Gib ein feste(vor) oder start(zurück)`);
         }
+
 
         //
     
