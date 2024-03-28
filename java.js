@@ -37,12 +37,11 @@ let hexe = new Character("Hexe", 350, [10,15,35,25,45]);
 
 let characters = { paul,versus,hexe,junge,waldtiere };
 
-    
 
-if(characters[attackerName]|| characters[defenderName]){
-    console.log('Der Gegner ist noch nicht Kampfbereit')}else{
-            console.log('Der Kämpfer ist nicht verfügbar');
-        }
+
+
+            
+        
 
 if(characters[attackerName] && characters[defenderName]){
     for(i=0; i < characters[attackerName].health; i++){
@@ -56,9 +55,29 @@ if(characters[attackerName] && characters[defenderName]){
         
 
         } 
+
+        
        
         }}
+        
+        if(characters[attackerName] || characters[defenderName]){
+        console.log('Der Gegner ist noch nicht Kampfbereit')}
+        
+        
+        
 
-    
+        if(paul.health <= 0){
+            console.log(`Du bist tot. GameOver!`);
+        }
+        if(hexe.health <= 0){
+            console.log(`Du rettest die Kinder und der Tag ist gerettet. Herzlichen Glückwunsch! 
+            ----The End----`);
+        }
+        if(waldtiere.health <= 0){
+            console.log(`Du hast überlebt. Gehe in Richtung Lebkuchenhaus oder zum Weg. Gib ein hexenhaus oder weg.`);
+        }
+        if(junge.health <= 0){
+            console.log(`Der Junge war schwächer. Vielleicht war es so ,weil er viel kleiner als du ist. Und vielleicht war er einfach kein Sieger. Du kannst nun nur in zwei Richtungen. Gib ein feste(vor) oder start(zurück)`);
+        }
     
 
