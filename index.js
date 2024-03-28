@@ -3,7 +3,6 @@ const characters = require(`./java.js`)
 
 let start = `Dein Name ist Paul. Du stehst auf einer weißen Wiese mit vielen lila Blumen. Der Himmel ist blau und klar. Links ist ein Weg und Rechts ist eine Brücke. Gib ein weg oder brücke.`;
 
-let zewi = k;{
 let weg = `Du kommst zu einem Weg wo ein Mann steht. Vor dir ist ein Wald. Willst du Reden, Weitergehen, oder Zurückgehen? Wenn du reden willst musst du das reden mit Leerzeichen hinter dem Befehl eingeben Gib ein reden, wald(weiter) oder start(zurück).`;
 let redeMann = `Der Mann erzählt das vor dem Waldweg vor dir Banditen warten und das es ein Zauberwort mit dem Namen trommel gibt. Willst du Weitergehen, oder Zurückgehen? Gib ein wald(weiter) oder start(zurück).`;
 let wald = `Vor dir ist ein dunkler Wald mit eckigen Bäumen und der Himmel wird mit jedem Schritt düsterer. Willst du Weitergehen, oder Zurückgehen? Gib ein wald2(weiter) oder start(zurück).`;
