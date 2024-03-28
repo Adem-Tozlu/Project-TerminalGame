@@ -3,24 +3,27 @@ const characters = require(`./java.js`)
 
 let start = `Dein Name ist Paul. Du stehst auf einer weißen Wiese mit vielen lila Blumen. Der Himmel ist blau und klar. Links ist ein Weg und Rechts ist eine Brücke. Gib ein weg oder brücke.`;
 
-let weg = `Du kommst zu einem Weg wo ein Mann steht. Vor dir ist ein Wald. Willst du Reden, Weitergehen, oder Zurückgehen? Wenn du reden willst musst du das reden... mit Leerzeichen hinter dem Befehl eingeben Gib ein reden, wald(weiter) oder start(zurück).`;
+let weg = `Du kommst zu einem Weg wo ein Mann steht. Vor dir ist ein Wald. Willst du Reden, Weitergehen, oder Zurückgehen? Wenn du reden willst musst du das reden mit Leerzeichen hinter dem Befehl eingeben Gib ein reden, wald(weiter) oder start(zurück).`;
 let redeMann = `Der Mann erzählt das vor dem Waldweg vor dir Banditen warten und das es ein Zauberwort mit dem Namen trommel gibt. Willst du Weitergehen, oder Zurückgehen? Gib ein wald(weiter) oder start(zurück).`;
 let wald = `Vor dir ist ein dunkler Wald mit eckigen Bäumen und der Himmel wird mit jedem Schritt düsterer. Willst du Weitergehen, oder Zurückgehen? Gib ein wald2(weiter) oder start(zurück).`;
-let wald2 = `Vor und hinter dir tauchen dunkle Gestalten auf. Willst du flüchten oder kämpfen? Gib ein waldFlucht oder waldKampf.`;
-let waldKampf = `Vor dir siehst du ein wunderschönes weißes Einhorn und eine Schar von Piguinen. Sie wollen dein Hab und Gut. Willst du es ihnen geben, kämpfen oder flüchten. Wenn du es geben willst musst du das geben mit Leerzeichen hinter dem Befehl eingeben. Gib ein geben, paul vs waldtiere oder waldFlucht`;
 
-let waldKampf2 = `paul vs waldtiere`;
+let wald2 = `Vor und hinter dir tauchen dunkle Gestalten auf. Willst du flüchten oder kämpfen?Wenn du kämpfen oder flüchten willst musst du es mit Leerzeichen hinter dem Befehl eingeben Gib ein flucht oder kampf.`;
+let waldKampf = `Vor dir siehst du ein wunderschönes weißes Einhorn und eine Schar von Piguinen. Sie wollen dein Hab und Gut. Willst du es ihnen geben, kämpfen oder flüchten. Wenn du es geben willst musst du das geben/flüchten mit Leerzeichen hinter dem Befehl eingeben. Gib ein geben, flucht, paul vs waldtiere`;
+
+
 
 let geben = `Du gibst ihnen dein Hab und Gut. Willst du wieder in Richtung Weg gehen wo du herkamst oder in die andere Richtung du siehst aus der Ferne ein Lebkuchenhaus? Gib ein weg oder hexenhaus`
 let waldFlucht = `Du wirst von vielen Schatten verfolgt aber entkommst ihnen. Nun hast du dich im Wald verlaufen. Vor dir ist ein Lebkuchenhaus. Gib ein hexenhaus(kein anderer Weg)`;
 let hexenhaus = `Das Lebkuchenhaus ist viel größer als es vorher aussah und zudem voll mit Essen. Du hörst Schreie aus dem Keller. Willst du das Essen nehmen und abhauen oder in den Keller gehen und den Schreien folgen? Gib ein weghier oder keller`;
-let keller = `Der Keller ist dunkel und du siehst 2 Kinder in einem rostigen Käfig um Hilfe rufen. Gib ein retteKinder`;
+
+let keller = `Der Keller ist dunkel und du siehst 2 Kinder in einem rostigen Käfig um Hilfe rufen. gebe retteKinder mit Leerzeichen hinter dem Befehl ein.`;
+
 let retteKinder = `Du rettest die Kinder und der Tag scheint gerettet. Nun taucht die Hexe auf. Gib ein paul vs hexe`;
 
 
 let weghier = `Du hast viel Essen in den Taschen und läufst so schnell wie deine Beine dich tragen. Du hörst Geräusche. Vertsecken oder weiterlaufen? Gib ein verstecken oder weiterlaufen`;
 let verstecken = waldKampf;
-let weiterlaufen = `Du wirst von Pinguinen durch den Wald gejagt. Willst du schneller laufen oder dich ergeben? Gib ein schneller oder ergeben`;
+let weiterlaufen = `Du wirst von Pinguinen durch den Wald gejagt. Willst du schneller laufen oder dich ergeben? Gib ein schnellWeg oder ergeben`;
 let schneller = weg;
 
 let brücke = `Du kommst zu einem Fluss dort steht eine kleine hölzerne Brücke und davor ist ein Junge. Willst du Reden, Weitergehen, oder Zurückgehen? Wenn du reden willst musst du das reden mit Leerzeichen hinter dem Befehl eingeben Gib ein reden, feste(weiter) oder start(zurück)`;
@@ -64,7 +67,9 @@ if(userInputArr[0] === `wald2` && userInputArr[1] === undefined){
 }
 
 
-if(userInputArr[0] === `wald2` && userInputArr[1] === undefined){
+
+if(userInputArr[0] === `wald2` && userInputArr[1] === `kampf`){
+
     console.log(waldKampf);
 }
 
@@ -73,7 +78,7 @@ if(userInputArr[0] === `wald2` && userInputArr[1] === `geben`){
     console.log(geben);
 }
 
-if(userInputArr[0] === `waldFlucht`){
+if(userInputArr[0] === `wald2` && userInputArr[1] === `flucht`){
     console.log(waldFlucht);
 }
 
@@ -86,7 +91,7 @@ if(userInputArr[0] === `keller`){
     console.log(keller);
 }
 
-if(userInputArr[0] === `retteKinder`){
+if(userInputArr[0] === `keller` && userInputArr[1] === `retteKinder`){
     console.log(retteKinder);
 }
 
@@ -104,7 +109,7 @@ if(userInputArr[0] === `weiterlaufen`){
     console.log(weiterlaufen);
 }
 
-if(userInputArr[0] === `schneller`){
+if(userInputArr[0] === `schnellWeg`){
     console.log(schneller);
 }
 
